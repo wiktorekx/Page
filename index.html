@@ -1,9 +1,74 @@
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8"/>
-<title>Hello World</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Święta</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 200px 1fr 200px;
+            grid-template-rows: 100px 1fr 80px;
+            height: 100vh;
+            text-align: center;
+            background-color: #e2e2e2;
+        }
+
+        body div, header, footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+        }
+
+        header {
+            grid-column: 1/4;
+            font-size: 2rem;
+        }
+
+        .left {
+            grid-column: 1/2;
+            font-size: 3rem;
+        }
+
+        .center {
+            grid-column: 2/3;
+        }
+
+        .right {
+            grid-column: 3/4;
+            font-size: 3rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer {
+            grid-column: 1/4;
+        }
+    </style>
 </head>
 <body>
-👋 🌎
+    <header>
+        Wesołych świąt
+    </header>
+    <div class="left">
+        ******
+    </div>
+    <div class="center">
+        <a href="https://allegro.pl/listing?string=choinka"><img src="hoinka.png" width="300px" alt="Choinka"/></a>
+    </div>
+    <div class="right">
+        <a href="https://pl.wikipedia.org/wiki/Karp"><img src="karp.png" alt="Karp"></a>
+        <a href="https://aniagotuje.pl/przepis/barszcz-czerwony"><img src="barszcz.png" alt="Barszcz"></a>
+        <a href="https://allegro.pl/listing?string=bombki"><img src="babka.png" alt="Bombka"></a>
+        <a href="https://allegro.pl/oferta/ozdoba-boze-narodzenie-gwiazda-betlejemska-12476503693"><img src="gwiazda.png" width="100px" alt="Gwiazda"></a>
+        <a href="https://www.kwestiasmaku.com/desery/ciasteczka/pierniczki/przepis.html"><img src="piernik.png" width="100px" alt="Piernik"></a>
+    </div>
+    <footer>
+        Wykonał Wiktor Roszczyk
+    </footer>
 </body>
 </html>
